@@ -1,0 +1,48 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+.image-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.image-list li {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 320px;
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+
+}
+  
+.image-list li img {
+    width: 100%;
+}
+
+/* @media screen and (min-width: 321px) {
+    .image-list li:nth-child(1) {
+    flex-basis: 100%;
+    max-width: 100%;
+    }
+} */
+
+@media screen and (max-width: 640px) {
+    .img-list li {
+    flex-basis: 33.333%;
+    }
+}
+
+
+
+
+
+
+
